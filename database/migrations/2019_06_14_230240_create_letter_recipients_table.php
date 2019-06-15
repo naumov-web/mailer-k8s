@@ -23,7 +23,7 @@ class CreateLetterRecipientsTable extends Migration
         Schema::table('letter_recipients', function (Blueprint $table) {
 
             $table->foreign('letter_id')->references('id')->on('letters');
-            $table->foreign('recipient_id')->references('id')->on('users');
+            $table->foreign('recipient_id')->references('id')->on('recipients');
 
         });
     }

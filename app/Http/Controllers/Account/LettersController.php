@@ -2,13 +2,16 @@
 
 namespace App\Http\Controllers\Account;
 
+use App\Enums\QueueNamesEnum;
 use App\Http\Controllers\Controller;
 use App\Http\Requests\Letters\StoreLetterRequest;
 use App\Http\Requests\Letters\GetLettersRequest;
 use App\Http\Requests\Letters\UpdateLetterRequest;
 use App\Http\Resources\Letters\LettersListResource;
 use App\Http\Resources\ListResource;
+use App\Jobs\Mail\SendEmail;
 use App\Letter;
+use App\Mail\SimpleMail;
 use App\Services\LetterService;
 use Illuminate\Http\JsonResponse;
 
@@ -95,6 +98,21 @@ class LettersController extends Controller
     {
         return [
             'success' => $this->letter_service->delete($letter)
+        ];
+    }
+
+    /**
+     * Add letter to sending queue
+     *
+     * @param Letter $letter
+     * @return array
+     */
+    public function send(Letter $letter) : array
+    {
+        dispatch(new SendEmail(new SimpleMail($letter)))->onQueue(QueueNamesEnum::EMAIL);
+
+        return [
+            'success' => true
         ];
     }
 

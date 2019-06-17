@@ -2,37 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0907755c-7f7f-4a68-83b4-3914ed172bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Enums/LetterStatusesEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Enums/QueueNamesEnum.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Jobs/Mail/SendMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/app/Mail/SimpleMail.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/local/configs/supervisord_queue_worker.conf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/local/docker/queue-worker/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/local/docker/redis/Dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.local" beforeDir="false" afterPath="$PROJECT_DIR$/.env.local" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/mailer-k8s.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/mailer-k8s.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/configs/nginx.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/configs/supervisor.conf" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/scripts/build_nginx_php.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/scripts/run_minikube.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/scripts/stop_minikube.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/LettersController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/LettersController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Controllers/Account/RecipientsController.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Controllers/Account/RecipientsController.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/BaseApiRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/BaseApiRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Letters/GetLettersRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Letters/GetLettersRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Letters/StoreLetterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Letters/StoreLetterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Letters/UpdateLetterRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Letters/UpdateLetterRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Recipients/GetRecipientsRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Recipients/GetRecipientsRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Recipients/StoreRecipientRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Recipients/StoreRecipientRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Requests/Recipients/UpdateRecipientRequest.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Requests/Recipients/UpdateRecipientRequest.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Letters/LettersListResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Letters/LettersListResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Http/Resources/Recipients/RecipientsListResource.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Http/Resources/Recipients/RecipientsListResource.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Letter.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Letter.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Recipient.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Recipient.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/LetterService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/LetterService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/app/Services/RecipientService.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Services/RecipientService.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.json" beforeDir="false" afterPath="$PROJECT_DIR$/composer.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/composer.lock" beforeDir="false" afterPath="$PROJECT_DIR$/composer.lock" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -79,48 +55,44 @@
   <component name="FileEditorManager">
     <leaf>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Http/Controllers/Account/LettersController.php">
+        <entry file="file://$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="621">
-              <caret line="111" column="17" selection-start-line="111" selection-start-column="17" selection-end-line="111" selection-end-column="31" />
-              <folding>
-                <element signature="e#48#77#0#PHP" expanded="true" />
-              </folding>
+            <state>
+              <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/.env">
+        <entry file="file://$PROJECT_DIR$/deployment/minikube/configs/supervisor.conf">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="306">
-              <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+            <state relative-caret-position="216">
+              <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/deployment/minikube/scripts/build_nginx_php.sh">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="36">
+              <caret line="2" column="95" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/Mail/SimpleMail.php">
+        <entry file="file://$PROJECT_DIR$/deployment/minikube/scripts/run_minikube.sh">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="693">
-              <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-              <folding>
-                <element signature="e#28#57#0#PHP" expanded="true" />
-              </folding>
+            <state relative-caret-position="144">
+              <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="26" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/Jobs/Mail/SendMail.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="718">
-              <caret line="42" column="5" selection-start-line="42" selection-start-column="5" selection-end-line="42" selection-end-column="5" />
-              <folding>
-                <element signature="e#33#62#0#PHP" expanded="true" />
-              </folding>
-            </state>
-          </provider>
+        <entry file="file://$PROJECT_DIR$/deployment/minikube/scripts/stop_minikube.sh">
+          <provider selected="true" editor-type-id="text-editor" />
         </entry>
       </file>
     </leaf>
@@ -175,6 +147,12 @@
         <option value="$PROJECT_DIR$/app/Http/Controllers/Account/LettersController.php" />
         <option value="$PROJECT_DIR$/app/Jobs/Mail/SendMail.php" />
         <option value="$PROJECT_DIR$/app/Mail/SimpleMail.php" />
+        <option value="$PROJECT_DIR$/deployment/minikube/configs/nginx.conf" />
+        <option value="$PROJECT_DIR$/deployment/minikube/configs/supervisor.conf" />
+        <option value="$PROJECT_DIR$/deployment/minikube/docker/mysql/Dockerfile" />
+        <option value="$PROJECT_DIR$/deployment/minikube/scripts/build_nginx_php.sh" />
+        <option value="$PROJECT_DIR$/deployment/minikube/scripts/run_minikube.sh" />
+        <option value="$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile" />
       </list>
     </option>
   </component>
@@ -281,68 +259,13 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
             <path>
               <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
               <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Enums" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Http" type="462c0819:PsiDirectoryNode" />
-              <item name="Controllers" type="462c0819:PsiDirectoryNode" />
-              <item name="Account" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Jobs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Jobs" type="462c0819:PsiDirectoryNode" />
-              <item name="Mail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="app" type="462c0819:PsiDirectoryNode" />
-              <item name="Mail" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="config" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
@@ -371,47 +294,18 @@
               <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
               <item name="deployment" type="462c0819:PsiDirectoryNode" />
               <item name="local" type="462c0819:PsiDirectoryNode" />
-              <item name="configs" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="deployment" type="462c0819:PsiDirectoryNode" />
-              <item name="local" type="462c0819:PsiDirectoryNode" />
               <item name="docker" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
               <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="resources" type="462c0819:PsiDirectoryNode" />
-              <item name="views" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="routes" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="mailer-k8s" type="b2602c69:ProjectViewProjectNode" />
-              <item name="mailer-k8s" type="462c0819:PsiDirectoryNode" />
-              <item name="storage" type="462c0819:PsiDirectoryNode" />
-              <item name="logs" type="462c0819:PsiDirectoryNode" />
+              <item name="deployment" type="462c0819:PsiDirectoryNode" />
+              <item name="minikube" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
         </subPane>
       </pane>
-      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -474,18 +368,20 @@
       <updated>1560549679134</updated>
       <workItem from="1560549680293" duration="14946000" />
       <workItem from="1560626541041" duration="12831000" />
-      <workItem from="1560643121664" duration="8531000" />
+      <workItem from="1560643121664" duration="9141000" />
+      <workItem from="1560724787309" duration="1304000" />
+      <workItem from="1560798144940" duration="171000" />
+      <workItem from="1560803916050" duration="794000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="36308000" />
+    <option name="totallyTimeSpent" value="39187000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="67" y="25" width="1853" height="1055" extended-state="6" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.255119" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.26342005" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="npm" order="2" side_tool="true" />
       <window_info id="Favorites" order="3" side_tool="true" />
@@ -504,7 +400,7 @@
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
       <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Database" order="3" visible="true" weight="0.32982844" />
+      <window_info anchor="right" id="Database" order="3" weight="0.32982844" />
     </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -527,51 +423,6 @@
     </option>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/deployment/local/configs/nginx.conf">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="20" column="1" selection-start-line="20" selection-start-column="1" selection-end-line="20" selection-end-column="1" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/local/docker/nginx/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="36">
-          <caret line="2" column="20" selection-start-line="2" selection-start-column="20" selection-end-line="2" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/web.php">
-      <provider selected="true" editor-type-id="text-editor" />
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="216">
-          <caret line="12" column="16" selection-start-line="12" selection-start-column="16" selection-end-line="12" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/deployment/local/docker/php-fpm/Dockerfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state>
-          <caret column="12" selection-start-column="12" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/resources/views/welcome.blade.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="479">
-          <caret line="83" column="30" selection-start-line="83" selection-start-column="30" selection-end-line="83" selection-end-column="30" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/database/migrations/2019_06_14_225527_create_letters_table.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="19" column="59" selection-start-line="19" selection-start-column="59" selection-end-line="19" selection-end-column="59" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/User.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="72">
@@ -855,13 +706,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/.env">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="306">
-          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
     <entry file="das://94b0d15e-d968-4c42-b31d-8ef825f076d4/schema/mailer/table/failed_jobs">
       <provider selected="true" editor-type-id="com.intellij.database.editor.DatabaseTableFileEditorProvider">
         <state projectRestartId="d5579b81-fe03-4805-a415-190dde61512c">
@@ -881,6 +725,23 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/Mail/SimpleMail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="693">
+          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
+          <folding>
+            <element signature="e#28#57#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.env">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="306">
+          <caret line="17" column="22" selection-start-line="17" selection-start-column="22" selection-end-line="17" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/app/Jobs/Mail/SendMail.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="718">
@@ -891,13 +752,42 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/Mail/SimpleMail.php">
+    <entry file="file://$PROJECT_DIR$/deployment/minikube/configs/nginx.conf">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="693">
-          <caret line="53" column="44" selection-start-line="53" selection-start-column="44" selection-end-line="53" selection-end-column="44" />
-          <folding>
-            <element signature="e#28#57#0#PHP" expanded="true" />
-          </folding>
+        <state relative-caret-position="54">
+          <caret line="3" column="24" selection-start-line="3" selection-start-column="24" selection-end-line="3" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/minikube/docker/mysql/Dockerfile" />
+    <entry file="file://$PROJECT_DIR$/deployment/minikube/configs/supervisor.conf">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="216">
+          <caret line="12" column="25" selection-start-line="12" selection-start-column="25" selection-end-line="12" selection-end-column="25" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/minikube/scripts/stop_minikube.sh">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/minikube/scripts/build_nginx_php.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="36">
+          <caret line="2" column="95" selection-start-line="2" selection-start-column="95" selection-end-line="2" selection-end-column="95" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="16" lean-forward="true" selection-start-column="16" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/deployment/minikube/scripts/run_minikube.sh">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="144">
+          <caret line="8" column="7" lean-forward="true" selection-start-line="8" selection-start-column="7" selection-end-line="8" selection-end-column="26" />
         </state>
       </provider>
     </entry>

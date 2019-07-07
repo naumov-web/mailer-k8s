@@ -1,0 +1,53 @@
+apiVersion: v1
+kind: Service
+metadata:
+    name: mysql
+spec:
+    ports:
+        - port: 3306
+    selector:
+        app: mysql
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+    name: mailer-mysql
+    labels:
+        app: mailer
+spec:
+    selector:
+        matchLabels:
+            app: mailer
+    strategy:
+        type: Recreate
+    template:
+        metadata:
+            labels:
+                app: mailer
+                tier: mysql
+        spec:
+            containers:
+            - name: mysql
+              image: mysql:8.0
+              imagePullPolicy: IfNotPresent
+              env:
+              - name: MYSQL_ROOT_PASSWORD
+                valueFrom:
+                  secretKeyRef:
+                    name: mailer-mysql-secret
+                    key: password
+              - name: MYSQL_DATABASE
+                valueFrom:
+                  secretKeyRef:
+                    name: mailer-mysql-secret
+                    key: db_name
+              ports:
+              - containerPort: 3306
+                name: mysql
+              volumeMounts:
+              - name: mysql-persistent-storage
+                mountPath: /var/lib/mysql
+            volumes:
+            - name: mysql-persistent-storage
+              persistentVolumeClaim:
+                claimName: mysql-pv-claim

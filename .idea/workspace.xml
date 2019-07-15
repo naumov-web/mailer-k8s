@@ -2,21 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0907755c-7f7f-4a68-83b4-3914ed172bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.dockerignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.env.minikube" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/configs/mysqld.cnf" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/docker/mysql/Dockerfile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/app_deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_deployment.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_external_service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_pv_claim.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_secret.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/scripts/deploy_mysql.sh" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.local.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.local.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/dataSources/94b0d15e-d968-4c42-b31d-8ef825f076d4.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/dataSources/94b0d15e-d968-4c42-b31d-8ef825f076d4.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_deployment.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -205,12 +192,12 @@
           <expand>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1c30e252" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@31f4bf25" type="7427dc5b:ServiceModel$ServiceGroupNode" />
             </path>
             <path>
               <item name="services root" type="e789fda9:ObjectUtils$Sentinel" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@1c30e252" type="7427dc5b:ServiceModel$ServiceGroupNode" />
-              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@5b0ba1d2" type="9fbbdea:ServiceModel$ServiceNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceGroupNode@31f4bf25" type="7427dc5b:ServiceModel$ServiceGroupNode" />
+              <item name="com.intellij.execution.services.ServiceModel$ServiceNode@6f5d7a0e" type="9fbbdea:ServiceModel$ServiceNode" />
             </path>
           </expand>
           <select />
@@ -238,6 +225,8 @@
       <workItem from="1561812369620" duration="4398000" />
       <workItem from="1562493283642" duration="12000" />
       <workItem from="1562538556913" duration="3660000" />
+      <workItem from="1563019698215" duration="14000" />
+      <workItem from="1563147693282" duration="1109000" />
     </task>
     <servers />
   </component>

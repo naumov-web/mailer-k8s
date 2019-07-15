@@ -1,12 +1,5 @@
 FROM php:7.2-fpm
 
-# Configure services
-RUN apt-get update && apt-get install -y nginx supervisor
-COPY deployment/minikube/configs/supervisor.conf /etc/supervisor/conf.d/supervisor.conf
-ADD deployment/minikube/configs/nginx.conf /etc/nginx/sites-enabled/default.conf
-RUN rm /etc/nginx/sites-enabled/default
-RUN /etc/init.d/nginx stop
-
 # Install libraries
 RUN apt-get update && apt-get install --assume-yes zlib1g-dev
 RUN docker-php-ext-install pdo pdo_mysql zip
@@ -29,4 +22,4 @@ RUN mkdir -p /var/www/storage/framework/cache \
     && mkdir -p /var/www/storage/logs
 RUN chown -R www-data:www-data /var/www/storage
 
-CMD ["/usr/bin/supervisord", "-n"]
+CMD ["php-fpm"]

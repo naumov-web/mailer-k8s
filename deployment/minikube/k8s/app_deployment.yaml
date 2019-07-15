@@ -1,0 +1,46 @@
+apiVersion: extensions/v1beta1
+kind: Deployment
+metadata:
+    name: mailer-app
+    namespace: default
+spec:
+    replicas: 1
+    selector:
+        matchLabels:
+            app: mailer-php-fpm
+    template:
+        metadata:
+            labels:
+                app: mailer-php-fpm
+        spec:
+            containers:
+                - name: mailer-web
+                  image: naumov-web/mailer-k8s:latest
+                  #imagePullPolicy: IfNotPresent
+                  ports:
+                      - containerPort: 7000
+                        protocol: TCP
+                  env:
+                      - name: "APP_KEY"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-app-secret
+                                key: app_key
+                      - name: "DB_DATABASE"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-mysql-secret
+                                key: db_name
+                      - name: "DB_USERNAME"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-mysql-secret
+                                key: db_username
+                      - name: "DB_USERNAME"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-mysql-secret
+                                key: db_password
+                  envFrom:
+                      - configMapRef:
+                            name: redis-config

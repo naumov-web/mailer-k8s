@@ -2,14 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0907755c-7f7f-4a68-83b4-3914ed172bd1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/app_secret.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/app_service.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/redis_config_map.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.env.minikube" beforeDir="false" afterPath="$PROJECT_DIR$/.env.minikube" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/docker/nginx/Dockerfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/nginx_deployment.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/k8s/nginx_service.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/scripts/build_nginx.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deployment/minikube/scripts/build_php.sh" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/configs/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/configs/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/docker/nginx-php/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/docker/php-fpm/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/app_deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/app_deployment.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/app_service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/app_service.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_external_service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_external_service.yaml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_secret.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_secret.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/scripts/build_nginx_php.sh" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -223,7 +228,9 @@
       <workItem from="1562538556913" duration="3660000" />
       <workItem from="1563019698215" duration="14000" />
       <workItem from="1563147693282" duration="2767000" />
-      <workItem from="1563221298186" duration="7262000" />
+      <workItem from="1563221298186" duration="7914000" />
+      <workItem from="1563394409714" duration="1500000" />
+      <workItem from="1563396312849" duration="6763000" />
     </task>
     <servers />
   </component>

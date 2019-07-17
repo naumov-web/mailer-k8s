@@ -15,8 +15,8 @@ spec:
         spec:
             containers:
                 - name: mailer-web
-                  image: naumov-web/mailer-k8s:latest
-                  #imagePullPolicy: IfNotPresent
+                  image: mailer-k8s:1.0
+                  #imagePullPolicy: Never
                   ports:
                       - containerPort: 7000
                         protocol: TCP

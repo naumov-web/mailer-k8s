@@ -36,7 +36,7 @@ spec:
                 valueFrom:
                   secretKeyRef:
                     name: mailer-mysql-secret
-                    key: password
+                    key: db_password
               - name: MYSQL_DATABASE
                 #value: mailer
                 valueFrom:

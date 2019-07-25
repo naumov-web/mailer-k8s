@@ -3,6 +3,8 @@ kind: Deployment
 metadata:
     name: mailer-app
     namespace: default
+    labels:
+        app: mailer-app
 spec:
     replicas: 1
     selector:
@@ -12,13 +14,14 @@ spec:
         metadata:
             labels:
                 app: mailer-php-fpm
+                #trier: backend
         spec:
             containers:
                 - name: mailer-web
                   image: mailer-k8s:1.0
                   #imagePullPolicy: Never
                   ports:
-                      - containerPort: 7000
+                      - containerPort: 9000
                         protocol: TCP
                   env:
                       - name: "APP_KEY"

@@ -5,7 +5,7 @@ RUN apt-get update && apt-get install --assume-yes zlib1g-dev
 RUN docker-php-ext-install pdo pdo_mysql zip
 
 # Open port
-EXPOSE 7000
+EXPOSE 9000
 
 # Install vendor
 COPY ./composer.json ./composer.lock /var/www/
@@ -19,6 +19,7 @@ RUN cd /var/www \
 
 RUN mkdir -p /var/www/storage/framework/cache \
     && mkdir -p /var/www/storage/framework/views \
+    && mkdir -p /var/www/storage/framework/sessions \
     && mkdir -p /var/www/storage/logs
 RUN chown -R www-data:www-data /var/www/storage
 

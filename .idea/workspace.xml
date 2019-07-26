@@ -2,11 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="0907755c-7f7f-4a68-83b4-3914ed172bd1" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/php.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/php.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/minikube/configs/nginx.conf" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/configs/nginx.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/docker/nginx/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/docker/nginx/Dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deployment/minikube/docker/php-fpm/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/docker/php-fpm/Dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/app_deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/app_deployment.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/app_service.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/app_service.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_deployment.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/deployment/minikube/k8s/mysql_deployment.yaml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -144,12 +145,6 @@
       <path value="$PROJECT_DIR$/vendor/ralouphie/getallheaders" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="170" />
-    <option name="y" value="71" />
-    <option name="width" value="1014" />
-    <option name="height" value="576" />
-  </component>
   <component name="ProjectId" id="1NgCIGzOc0WgdXISUOXJR25hw03" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
@@ -226,6 +221,7 @@
       <workItem from="1563612642835" duration="73000" />
       <workItem from="1563996170796" duration="9258000" />
       <workItem from="1564039161313" duration="461000" />
+      <workItem from="1564133931691" duration="5251000" />
     </task>
     <servers />
   </component>

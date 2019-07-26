@@ -9,15 +9,15 @@ spec:
     replicas: 1
     selector:
         matchLabels:
-            app: mailer-php-fpm
+            app: mailer-app
     template:
         metadata:
             labels:
-                app: mailer-php-fpm
+                app: mailer-app
                 #trier: backend
         spec:
             containers:
-                - name: mailer-web
+                - name: mailer-app
                   image: mailer-k8s:1.0
                   #imagePullPolicy: Never
                   ports:

@@ -1,33 +1,33 @@
 apiVersion: v1
 kind: Service
 metadata:
-    name: mysql
+    name: mailer-mysql-service
 spec:
     ports:
         - port: 3306
     selector:
-        app: mysql
+        app: mailer-mysql
 ---
 apiVersion: apps/v1
 kind: Deployment
 metadata:
     name: mailer-mysql
     labels:
-        app: mailer
+        app: mailer-mysql
 spec:
     selector:
         matchLabels:
-            app: mailer
+            app: mailer-mysql
     strategy:
         type: Recreate
     template:
         metadata:
             labels:
-                app: mailer
+                app: mailer-mysql
                 tier: mysql
         spec:
             containers:
-            - name: mysql
+            - name: mailer-mysql
               image: mysql:5.7
               imagePullPolicy: IfNotPresent
               env:
@@ -45,7 +45,7 @@ spec:
                     key: db_name
               ports:
               - containerPort: 3306
-                name: mysql
+                protocol: TCP
               volumeMounts:
               - name: mysql-persistent-storage
                 mountPath: /var/lib/mysql

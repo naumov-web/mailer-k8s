@@ -39,7 +39,7 @@ spec:
                             secretKeyRef:
                                 name: mailer-mysql-secret
                                 key: db_username
-                      - name: "DB_USERNAME"
+                      - name: "DB_PASSWORD"
                         valueFrom:
                             secretKeyRef:
                                 name: mailer-mysql-secret
@@ -47,3 +47,28 @@ spec:
                   envFrom:
                       - configMapRef:
                             name: redis-config
+            initContainers:
+                - name: mailer-app-init
+                  image: mailer-k8s-init:1.0
+                  env:
+                      - name: "APP_KEY"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-app-secret
+                                key: app_key
+                      - name: "DB_DATABASE"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-mysql-secret
+                                key: db_name
+                      - name: "DB_USERNAME"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-mysql-secret
+                                key: db_username
+                      - name: "DB_PASSWORD"
+                        valueFrom:
+                            secretKeyRef:
+                                name: mailer-mysql-secret
+                                key: db_password
+
